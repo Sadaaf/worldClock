@@ -1,7 +1,10 @@
 # World Clock Project
 
-All the documentation for this project can be found by going to this [link](https://docs.google.com/document/d/13EkccvcjlMPNwfQ7cuasyOkzElMjvKSBJaOM5UwUvgY/edit?usp=sharing)
+## Requirements
+
+- [Client Requirements](./documentation/client-requirements.md)
+- [Requirement Analysis](./documentation/requirement-analysis.md)
 
 ## The Component Diagram is the following
 
-![Component-Diagram](./documentation//component-diagram.svg)
+![Component-Diagram](./documentation/diagrams//component-diagram.svg)
