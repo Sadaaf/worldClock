@@ -53,7 +53,7 @@ This app will only use React for the whole app as it will be front end only.
 
 ### Time - DateTime Object
 
-This will be the main time object that will help us determine the current time . All time in the system will be calculated based on the difference from this time`Time`
+This will be the main time object that will help us determine the current time . All time in the system will be calculated based on the difference from this `Time`
 
 ### Clock - Objet
 
@@ -74,5 +74,67 @@ All tasks in the system will contain the following attributes
 - `taskStatus`
   - `Complete`
   - `Pending`
+
+## 5. Component Design
+
+### Text
+
+This component is responsible for creating a react-styled component that will be used with div html element.
+
+| PropName | Type | Required | Description |
+| -------- | ---- | -------- | ----------- |
+|          |      |          |             |
+
+### Label
+
+This component is responsible for creating a react-styled component that will be used with label html element.
+
+| PropName | Type   | Required | Description                  |
+| -------- | ------ | -------- | ---------------------------- |
+| label    | string | yes      | The text to display as label |
+
+### Input
+
+This component is responsible for creating a react-styled component that will be used with input html element.
+
+| PropName | Type     | Required | Description                                    |
+| -------- | -------- | -------- | ---------------------------------------------- |
+| type     | string   | yes      | The type of input allowed                      |
+| name     | string   | yes      | The identifier for html element identification |
+| value    | string   | yes      | The value of the element                       |
+| onChange | function | yes      | The onChange event handler function            |
+
+### InputElement
+
+This component is responsible for creating a input element that will bundle the Input and Label component
+
+| PropName | Type     | Required | Description                                      |
+| -------- | -------- | -------- | ------------------------------------------------ |
+| label    | string   | yes      | The text to display as label                     |
+| type     | string   | yes      | The type of input allowed                        |
+| name     | string   | yes      | The identifier for html element value extraction |
+| value    | string   | yes      | The value of the element                         |
+| onChange | function | yes      | The onChange event handler function              |
+
+### Button
+
+This component is responsible for creating a react-styled component that will be used with button html element.
+
+| PropName | Type     | Required | Description                        |
+| -------- | -------- | -------- | ---------------------------------- |
+| text     | string   | yes      | The text to display inside button  |
+| onClick  | function | yes      | The onClick event handler function |
+
+### Form
+
+This component is responsible for creating a form element that will bundle the InputElement and Button component
+
+| PropName | Type     | Required | Description                                      |
+| -------- | -------- | -------- | ------------------------------------------------ |
+| label    | string   | yes      | The text to display as label                     |
+| type     | string   | yes      | The type of input allowed                        |
+| name     | string   | yes      | The identifier for html element value extraction |
+| value    | string   | yes      | The value of the element                         |
+| onChange | function | yes      | The onChange event handler function              |
 
 All the requirements related documents for this project in doc format can be found at this [link](https://docs.google.com/document/d/13EkccvcjlMPNwfQ7cuasyOkzElMjvKSBJaOM5UwUvgY/edit?usp=sharing)
