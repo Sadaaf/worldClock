@@ -138,3 +138,29 @@ This component is responsible for creating a form element that will bundle the I
 | onChange | function | yes      | The onChange event handler function              |
 
 All the requirements related documents for this project in doc format can be found at this [link](https://docs.google.com/document/d/13EkccvcjlMPNwfQ7cuasyOkzElMjvKSBJaOM5UwUvgY/edit?usp=sharing)
+
+## 6. Custom Hooks
+
+### useTaskForm
+
+This custom hook will be responsible for generating logics for the task creation UI functionality
+
+| Props | Type     | Description           |
+| ----- | -------- | --------------------- |
+| cb    | function | the callback function |
+
+| Return Values | Type     | Description                                               |
+| ------------- | -------- | --------------------------------------------------------- |
+| taskState     | object   | The state of a Task containing title, description of task |
+| handleChange  | function | the handler for changes in input fields                   |
+| handleSubmit  | function | the handler for handing a form data when it is submitted  |
+
+### useClockForm
+
+This custom hook will be responsible for generating logics for the clock creation UI functionality
+
+| Return Values | Type     | Description                                                              |
+| ------------- | -------- | ------------------------------------------------------------------------ |
+| clockState    | object   | The state of a Clock containing the timezone and the taskList associated |
+| handleChange  | function | the handler for changes in input fields                                  |
+| handleSubmit  | function | the handler for handing a form data when it is submitted                 |
